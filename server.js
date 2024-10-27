@@ -51,8 +51,7 @@ const upload = multer({ storage });
 
 // Configure OpenAI
 const openai = new OpenAI({
-  apiKey:
-    "sk-Qe63IVA1OsOGYPm32SBgG59TwPyQFD8nbBI0cUBpOrT3BlbkFJIBUMPAupGqcaXg1eUeuToRydVV7tgD_kPKfXcQXp4A",
+  apiKey: "",
 });
 
 // Create uploads directory if it doesn't exist
