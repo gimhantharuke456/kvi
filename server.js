@@ -90,7 +90,7 @@ app.post("/predict", upload.single("image"), async (req, res) => {
           content: [
             {
               type: "text",
-              text: "Analyze this gemstone image and tell me if it's cut or uncut. If this is cur one class shape should be something like pear,heart etc .If it's uncut, also describe its colors. Return the response in JSON format with keys 'class_name' (either name of the shape or 'uncut'), 'confidence_score' (between 0 and 1), and 'color_description' (only if uncut).",
+              text: "Analyze this gemstone image and tell me if it's cut or uncut. If this is cut one class shape should be something like pear,heart,bar,dot,marquise,oval,pear,round,square,triangle etc .If it's uncut, also describe its colors. Return the response in JSON format with keys 'class_name' (either name of the shape or 'uncut'), 'confidence_score' (between 0 and 1), and 'color_description' (only if uncut).",
             },
             {
               type: "image_url",
