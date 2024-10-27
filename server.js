@@ -4,6 +4,7 @@ const multer = require("multer");
 const OpenAI = require("openai");
 const path = require("path");
 const fs = require("fs").promises;
+require("dotenv").config();
 
 const app = express();
 
@@ -51,7 +52,7 @@ const upload = multer({ storage });
 
 // Configure OpenAI
 const openai = new OpenAI({
-  apiKey: "",
+  apiKey: process.env.OPEN_AI_KEY,
 });
 
 // Create uploads directory if it doesn't exist
