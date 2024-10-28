@@ -23,7 +23,9 @@ function parseOpenAIResponse(responseText) {
       cleaned = cleaned.trim();
 
       // Parse the cleaned JSON
-      return JSON.parse(cleaned);
+      const data = JSON.parse(cleaned);
+
+      return { ...data, response: data?.color_description };
     }
   } catch (error) {
     console.error("Error parsing response:", error);
