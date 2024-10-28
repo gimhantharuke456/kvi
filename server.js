@@ -153,7 +153,7 @@ app.post("/generate-image", async (req, res) => {
       names: [filename],
     });
   } catch (error) {
-    console.error("Error:", error);
+    console.error("Error:s", error);
     return res.status(500).json({ error: error.message });
   }
 });
